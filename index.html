@@ -43,29 +43,29 @@
   }
 
   /* Left panel — half screen */
-  .card-panel-left {
-    position: absolute;
-    top: 0; left: 0;
-    width: 50%; height: 100%;
-    background-image: url(slide.PNG);
-    background-size: cover;
-    background-position: right center;
-    transition: transform 1.1s cubic-bezier(0.77,0,0.18,1);
-    will-change: transform;
-    z-index: 2;
-  }
-  /* Right panel — half screen (mirror image position) */
-  .card-panel-right {
-    position: absolute;
-    top: 0; right: 0;
-    width: 50%; height: 100%;
-    background-image: url(slide.PNG);
-    background-size: cover;
-    background-position: left center;
-    transition: transform 1.1s cubic-bezier(0.77,0,0.18,1);
-    will-change: transform;
-    z-index: 2;
-  }
+.card-panel-left,
+.card-panel-right {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("slide.PNG");
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  transition: transform 1.1s cubic-bezier(0.77,0,0.18,1);
+  will-change: transform;
+  z-index: 2;
+}
+
+.card-panel-left {
+  left: 0;
+  background-position: left center;
+}
+
+.card-panel-right {
+  right: 0;
+  background-position: right center;
+}
 
   /* Thin gold seam line at center join */
   .card-seam {
