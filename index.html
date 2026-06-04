@@ -328,7 +328,14 @@
   /* ══════════════════════════════════
      COUNTDOWN
   ══════════════════════════════════ */
-  #countdown{padding:80px 24px;background:linear-gradient(160deg,#3d1f1a 0%,#5c2e28 50%,#3d1f1a 100%);position:relative;overflow:hidden;}
+  #countdown{padding:80px 24px;background: linear-gradient(
+  160deg,
+  #221522 0%,
+  #4b2f4f 35%,
+  #7a5c82 70%,
+  #3a2336 100%
+);
+position:relative;overflow:hidden;}
   #countdown::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(232,160,120,0.08) 0%,transparent 50%),radial-gradient(circle at 80% 30%,rgba(201,151,58,0.06) 0%,transparent 50%);}
   .countdown-label{color:rgba(245,228,192,0.7)!important;} .countdown-title{color:#f5e4c0!important;}
   .countdown-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:400px;margin:40px auto 0;}
